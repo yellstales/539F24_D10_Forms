@@ -20,23 +20,18 @@
             <label for="last-name">Last Name:</label>
             <input type="text" name="last-name" id = "last-name" required>
 
-            <label for="program">Program: </label>
+            <label for="program-level">Program Level:</label>
+            <select name="levels" id="program-level">
+                <option value="bachelors">Bachelors</option>
+                <option value="masters">Masters</option>
+                <option value="phd">PHD</option>
+            </select>
+
+            <label for="school">UM School: </label>
+            <input type="text" id="school" name="school">
+            
+            <label for="program">Program Name: </label>
             <input type="text" id="program" name="program">
-
-            <div class="radio-group">
-                <p>Available Time for Picking Up Grocery:</p>
-                <input type="radio" id="morning" name="available-time" value="morning">
-                <label for="morning">Morning</label>
-
-                <input type="radio" id="afternoon" name="available-time" value="afternoon">
-                <label for="afternoon">Afternoon</label>
-
-                <input type="radio" id="evening" name="available-time" value="evening">
-                <label for="evening">Evening</label>
-
-                <input type="radio" id="weekend" name="available-time" value="weekend">
-                <label for="weekend">Weekend</label>
-            </div>
 
             <input type="submit" value="Submit">
         </fieldset>
